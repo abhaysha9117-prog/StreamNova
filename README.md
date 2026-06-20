@@ -179,7 +179,7 @@ POST /watch/save
 **Abhay Kumar Sharma**
 
 * GitHub: https://github.com/abhaysha9117-prog
-* LinkedIn: [www.linkedin.com/in/abhay-kumar-sharma-047298265](http://www.linkedin.com/in/abhay-kumar-sharma-047298265)
+* LinkedIn: [https://www.linkedin.com/in/abhay-sharma-32220429b](https://www.linkedin.com/in/abhay-sharma-32220429b)
 
 ## 📄 License
 
