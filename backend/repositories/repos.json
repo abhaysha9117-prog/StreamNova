@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Test Extension",
+    "url": "https://example.com/plugin.py"
+  },
+  "http://127.0.0.1:8000/repo_test/repo.json",
+  "https://raw.githubusercontent.com/self-similarity/MegaRepo/builds/repo.json"
+]

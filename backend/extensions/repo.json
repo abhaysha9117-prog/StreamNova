@@ -1,0 +1,8 @@
+[
+  {
+    "name": "LocalRepoExtension",
+    "file": "local_extension.py",
+    "version": "1.0",
+    "url": "http://127.0.0.1:8000/repo_test/local_extension.py"
+  }
+]

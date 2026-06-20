@@ -1,0 +1,6 @@
+.next/ 
+backend/downloads/ 
+__pycache__/ 
+*.pyc 
+.env 
+backend/venv311/ 
