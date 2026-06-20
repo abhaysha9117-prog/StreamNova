@@ -91,13 +91,13 @@ app.include_router(
     prefix="/watch",
     tags=["Watch"]
 )
-from routers import torrent
+# from routers import torrent
 
-app.include_router(
-    torrent.router,
-    prefix="/torrent",
-    tags=["Torrent"]
-)
+# app.include_router(
+#     torrent.router,
+#     prefix="/torrent",
+#     tags=["Torrent"]
+# )
 
 
 # ⭐ Extensions Router
