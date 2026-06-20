@@ -74,7 +74,7 @@ const [episodes, setEpisodes] = useState<any[]>([]);
 
     const response = await fetch(
 
-      "http://127.0.0.1:8000/torrent/load_torrent",
+      "https://streamnova-qgog.onrender.com/torrent/load_torrent",
 
       {
 
@@ -93,7 +93,7 @@ const [episodes, setEpisodes] = useState<any[]>([]);
 
       window.open(
 
-        `http://127.0.0.1:8000/torrent/player/${data.torrent_id}`,
+        `https://streamnova-qgog.onrender.com/torrent/player/${data.torrent_id}`,
 
         "_blank"
 
@@ -127,7 +127,7 @@ const [episodes, setEpisodes] = useState<any[]>([]);
     try {
 
       const res = await fetch(
-        `http://127.0.0.1:8000/search?query=${query}`
+        `https://streamnova-qgog.onrender.com/search?query=${query}`
       );
 
       const data = await res.json();
@@ -171,7 +171,7 @@ async function providerSearch() {
   if (!providerQuery) return;
 
   const res = await fetch(
-    `http://127.0.0.1:8000/provider/search?query=${providerQuery}`
+    `https://streamnova-qgog.onrender.com/provider/search?query=${providerQuery}`
   );
 
   const data = await res.json();
@@ -187,7 +187,7 @@ async function providerSearch() {
 async function loadEpisodes(id: string) {
 
   const res = await fetch(
-    `http://127.0.0.1:8000/provider/episodes?item_id=${id}`
+    `https://streamnova-qgog.onrender.com/provider/episodes?item_id=${id}`
   );
 
   const data = await res.json();
@@ -221,7 +221,7 @@ async function playEpisode(
 ) {
 
   const res = await fetch(
-    `http://127.0.0.1:8000/provider/streams?item_id=${id}&provider=${provider}`
+    `https://streamnova-qgog.onrender.com/provider/streams?item_id=${id}&provider=${provider}`
   );
 
   const data = await res.json();
@@ -283,7 +283,7 @@ async function playEpisode(
     try {
 
       const res = await fetch(
-        "http://127.0.0.1:8000/watch/list"
+        "https://streamnova-qgog.onrender.com/watch/list"
       );
 
       const data = await res.json();
@@ -318,7 +318,7 @@ async function playEpisode(
       for (const q of queries) {
 
         const res = await fetch(
-          `http://127.0.0.1:8000/search?query=${q}`
+          `https://streamnova-qgog.onrender.com/search?query=${q}`
         );
 
         const data = await res.json();
@@ -381,7 +381,7 @@ async function playEpisode(
           genreQueries[genre];
 
         const res = await fetch(
-          `http://127.0.0.1:8000/search?query=${query}`
+          `https://streamnova-qgog.onrender.com/search?query=${query}`
         );
 
         const data = await res.json();

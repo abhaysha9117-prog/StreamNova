@@ -24,7 +24,7 @@ export default function SeriesPage() {
 
       const res =
         await fetch(
-          `http://127.0.0.1:8000/episodes/${imdbID}`
+          `https://streamnova-qgog.onrender.com/episodes/${imdbID}`
         );
 
       const data =

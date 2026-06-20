@@ -54,7 +54,7 @@ export default function WatchPage() {
 
         // Streams
         const res = await fetch(
-          `http://127.0.0.1:8000/watch/streams/${imdbID}`
+          `https://streamnova-qgog.onrender.com/watch/streams/${imdbID}`
         );
 
         const data =
@@ -75,7 +75,7 @@ export default function WatchPage() {
         // Movie info
         const movieRes =
           await fetch(
-            `http://127.0.0.1:8000/movie/${imdbID}`
+            `https://streamnova-qgog.onrender.com/movie/${imdbID}`
           );
 
         const movieData =
@@ -151,7 +151,7 @@ export default function WatchPage() {
 
         const res =
           await fetch(
-            "http://127.0.0.1:8000/watch/list"
+            "https://streamnova-qgog.onrender.com/watch/list"
           );
 
         const history =
@@ -215,7 +215,7 @@ export default function WatchPage() {
     if (progress < 5) return;
 
     fetch(
-      "http://127.0.0.1:8000/watch/save",
+      "https://streamnova-qgog.onrender.com/watch/save",
       {
         method: "POST",
 

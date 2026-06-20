@@ -43,7 +43,7 @@ export default function MoviePage() {
       try {
 
         const res = await fetch(
-          `http://127.0.0.1:8000/movie/${imdbID}`
+          `https://streamnova-qgog.onrender.com/movie/${imdbID}`
         );
 
         const data =

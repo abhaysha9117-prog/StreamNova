@@ -28,7 +28,7 @@ export default function ExtensionsPage() {
 
     const res =
       await fetch(
-        "http://127.0.0.1:8000/extensions/available"
+        "https://streamnova-qgog.onrender.com/extensions/available"
       );
 
     const data =
@@ -44,7 +44,7 @@ export default function ExtensionsPage() {
   async function toggle(name: string) {
 
     await fetch(
-      `http://127.0.0.1:8000/extensions/toggle/${name}`,
+      `https://streamnova-qgog.onrender.com/extensions/toggle/${name}`,
       {
         method: "POST"
       }
@@ -60,7 +60,7 @@ export default function ExtensionsPage() {
   async function addRepo() {
 
     await fetch(
-      `http://127.0.0.1:8000/extensions/add-repo?repo_url=${repoUrl}`,
+      `https://streamnova-qgog.onrender.com/extensions/add-repo?repo_url=${repoUrl}`,
       {
         method: "POST"
       }
@@ -77,7 +77,7 @@ export default function ExtensionsPage() {
 
     const res =
       await fetch(
-        `http://127.0.0.1:8000/extensions/repo-extensions?repo_url=${repoUrl}`
+        `https://streamnova-qgog.onrender.com/extensions/repo-extensions?repo_url=${repoUrl}`
       );
 
     const data =
@@ -93,7 +93,7 @@ export default function ExtensionsPage() {
   async function install(url: string) {
 
     await fetch(
-      `http://127.0.0.1:8000/extensions/install-extension?extension_url=${url}`,
+      `https://streamnova-qgog.onrender.com/extensions/install-extension?extension_url=${url}`,
       {
         method: "POST"
       }

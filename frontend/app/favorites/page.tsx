@@ -17,7 +17,7 @@ export default function FavoritesPage() {
 
   const fetchFavorites = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/favorites/list");
+      const res = await fetch("https://streamnova-qgog.onrender.com/favorites/list");
       setFavorites(await res.json());
     } catch {}
     setLoading(false);
@@ -26,7 +26,7 @@ export default function FavoritesPage() {
   const remove = async (id: string) => {
     setRemoving(id);
     try {
-      await fetch(`http://127.0.0.1:8000/favorites/remove/${id}`, { method: "DELETE" });
+      await fetch(`https://streamnova-qgog.onrender.com/favorites/remove/${id}`, { method: "DELETE" });
       setFavorites(f => f.filter(m => m.imdbID !== id));
     } catch {}
     setRemoving(null);

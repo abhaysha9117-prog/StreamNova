@@ -20,7 +20,7 @@ export default function HistoryPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/watch/list")
+    fetch("https://streamnova-qgog.onrender.com/watch/list")
       .then(r => r.json())
       .then(d => { setHistory(d); setLoading(false); })
       .catch(() => setLoading(false));
