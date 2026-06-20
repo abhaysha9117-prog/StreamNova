@@ -317,7 +317,7 @@ export default function WatchPage() {
               {streams.map((stream) => (
 
                 <button
-                  key={stream.quality + stream.provider}
+                  key={`${stream.quality}-${stream.url}`}
                   onClick={() =>
                     changeQuality(
                       stream.url
